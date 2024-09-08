@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Confirmação de Agendamento</h2>
+    <p><strong>Nome Completo:</strong> {{ appointment.customer_name }}</p>
+    <p><strong>Telefone:</strong> {{ appointment.phone }}</p>
+    <p><strong>Modelo do Veículo:</strong> {{ appointment.vehicle_model }}</p>
+    <p><strong>Placa do Veículo:</strong> {{ appointment.vehicle_plate }}</p>
+    <p><strong>Data:</strong> {{ appointment.date }}</p>
+    <p><strong>Horário:</strong> {{ appointment.time }}</p>
+    <p><strong>Serviço:</strong> {{ appointment.service }}</p>
+    <a href="{{ url_for('home') }}">Voltar para Home</a>
+{% endblock %}
+

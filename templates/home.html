@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Agende seu serviço de lava rápido</h2>
+    
+
+<div class="button">
+    <a href="{{ url_for('login') }}" class="link">Login para Funcionários</a>
+ </div>
+ <div class="button">   
+    <a href="{{ url_for('schedule') }}"class="link">Agendar Serviço</a>
+</div>
+{% endblock %}
+

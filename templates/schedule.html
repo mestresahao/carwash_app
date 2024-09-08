@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Agendar Serviço</h2>
+    <form method="POST">
+        <label for="customer_name">Nome Completo:</label>
+        <input type="text" id="customer_name" name="customer_name" required><br>
+        
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" name="phone" required><br>
+        
+        <label for="vehicle_model">Modelo do Veículo:</label>
+        <input type="text" id="vehicle_model" name="vehicle_model" required><br>
+        
+        <label for="vehicle_plate">Placa do Veículo:</label>
+        <input type="text" id="vehicle_plate" name="vehicle_plate" required><br>
+        
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required><br>
+        
+        <label for="time">Horário:</label>
+        <input type="time" id="time" name="time" required><br>
+        
+        <label for="service">Serviço:</label>
+        <select id="service" name="service">
+            <option value="Lavagem Simples">Lavagem Simples</option>
+            <option value="Lavagem com Enceramento">Lavagem com Enceramento</option>
+            <option value="Higienização Interna">Higienização Interna</option>
+            <option value="Hidratação de Couro">Hidratação de Couro</option>
+            <option value="Polimento Comercial">Polimento Comercial</option>
+        </select><br>
+        
+        <button type="submit">Agendar</button>
+    </form>
+{% endblock %}
+
+
+
+        
+
+

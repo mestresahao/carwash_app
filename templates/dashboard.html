@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Agendamentos</h2>
+    <ul>
+        {% for appointment in appointments %}
+            <li>{{ appointment.date }} às {{ appointment.time }} - Serviço: {{ appointment.service }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('schedule') }}">Agendar Novo Serviço</a>
+{% endblock %}
+
